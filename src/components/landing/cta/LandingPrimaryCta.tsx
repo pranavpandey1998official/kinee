@@ -121,7 +121,7 @@ export const LandingPrimaryImageCtaSection = ({
   return (
     <section
       className={clsx(
-        'w-full flex flex-col justify-center items-center gap-8 py-12 lg:py-16',
+        'w-full  h-screen flex flex-col justify-center items-center gap-8 py-12 lg:py-16',
         withBackground && variant === 'primary'
           ? 'bg-primary-100/20 dark:bg-primary-900/10'
           : '',
