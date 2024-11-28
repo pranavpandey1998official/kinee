@@ -54,7 +54,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Company Logo */}
           <div className="flex items-center space-x-3">
-            <img src="/logo_hor.png" alt="Company Logo" className="h-16" />
+            <Image src="/logo_hor.png" alt="Company Logo"  width={120} height={40}/>
           </div>
 
           {/* Social Media Icons */}
