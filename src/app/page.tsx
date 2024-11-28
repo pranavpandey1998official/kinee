@@ -54,7 +54,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Company Logo */}
           <div className="flex items-center space-x-3">
-            <Image src="/logo_hor.png" alt="Company Logo"  width={120} height={40}/>
+            <Image src="/kinee/logo_hor.png" alt="Company Logo"  width={120} height={40}/>
           </div>
 
           {/* Social Media Icons */}
@@ -92,7 +92,7 @@ function Header() {
     <header className="bg-secondary-100/20 text-white">
       <div className="container mx-auto py-4">
         <Image
-          src="/logo_hor.png"
+          src="/kinee/logo_hor.png"
           alt="Kinee logo"
           width={120}
           height={40}
@@ -109,7 +109,7 @@ export default function Component() {
       <LandingPrimaryImageCtaSection
         title="Welcome to Kinee – Where Pet Adventures Begin!"
         description="Elevate your pet’s walk with the best accessories designed for comfort, style, and safety."
-        imageSrc="/dog_cat.png"
+        imageSrc="/kinee/dog_cat.png"
         imageAlt="Sample image"
         withBackground
         withBackgroundGlow
