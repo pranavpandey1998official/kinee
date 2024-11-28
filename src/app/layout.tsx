@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter, Syne } from 'next/font/google';
 import "./globals.css";
 
 import { Roboto_Serif, Rubik } from 'next/font/google';
