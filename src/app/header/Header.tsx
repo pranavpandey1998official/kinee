@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <header className="bg-secondary-100/20 text-white">
+    <header className="bg-secondary-900 text-white">
       <div className="container mx-auto py-4">
         <Image
           src="/kinee/logo_hor.png"

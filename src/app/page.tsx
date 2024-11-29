@@ -8,39 +8,90 @@ import { Footer } from "./footer";
 
 const featureItems = [
   {
-    title: "Quality You Can Trust",
+    title: "Crafted with Care, Built for Trust",
     description:
-      "We source only the highest-quality materials, ensuring every accessory is made to last. Your pet’s comfort and safety are our priority.",
+      "We use only premium materials to ensure every accessory is durable, safe, and designed with your pet’s comfort in mind—because they deserve nothing less.",
     icon: <SparklesIcon />,
   },
   {
-    title: "Designed for Adventure",
+    title: "Adventure-Ready Designs",
     description:
-      "From the city streets to the wilderness, our accessories are designed to meet the demands of your active lifestyle and provide ultimate convenience.",
+      "Whether exploring the park or trekking new trails, Kinee’s accessories are crafted to keep up with your adventures, offering unmatched style, comfort, and functionality for you and your furry companion.",
     icon: <LineChartIcon />,
   },
   {
-    title: "Customer Satisfaction Guarantee",
+    title: "Your Satisfaction, Our Promise",
     description:
-      "We’re pet owners too, and we know how important it is to have reliable gear. If you’re not satisfied with your purchase, we offer hassle-free returns because we want you and your pet to be happy.",
+      "As fellow pet lovers, we understand the need for dependable gear. That’s why Kinee guarantees a worry-free experience with every purchase—your happiness and your pet’s joy are what matter most.",
     icon: <LayersIcon />,
   },
 ];
 
 const faqItems = [
   {
-    question: "Can I get a refund?",
-    answer:
-      "Yes, you can get a refund within 30 days of your purchase. No questions asked.",
+    question: "Walk Essentials",
+    answers: [
+      "Collars",
+      "Leashes",
+      "Harnesses",
+      "Name Tags",
+      "Collar & Leash Set",
+    ],
   },
   {
-    question: "What technologies are used?",
-    answer: "We use Next.js, Tailwind CSS, and Vercel for the deployment.",
+    question: "Clothing",
+    answers: [
+      "Jackets",
+      "Sweatshirts",
+      "Sweaters",
+      "Raincoats",
+      "T-Shirts & Shirts",
+      "Dresses",
+    ],
   },
   {
-    question: "What do I get if I pre-order?",
-    answer:
-      "With the pre-order, you get a 50% discount on the final price and a lifetime license for the generated code.",
+    question: "Grooming",
+    answers: [
+      "Shampoos, Conditioners",
+      "Brushes & Combs",
+      "Towels & Wipessses",
+      "Tick & Flea",
+      "Dry Baths & Perfumes",
+      "Paw Care",
+    ],
+  },
+  {
+    question: "Dog Toys",
+    answers: [
+      "Chew Toys",
+      "Plush Toys",
+      "Balls",
+      "Interactive Toys",
+      "Tough Chewers",
+      "Rope Toys",
+    ],
+  },
+  {
+    question: "Food",
+    answers: [
+      "Special Meals",
+      "Dry Food",
+      "Wet Food",
+      "Puppy Food",
+      "Grain Free Food",
+      "Hypoallergenic Food",
+    ],
+  },
+  {
+    question: "Treats, Biscuits & Chews",
+    answers: [
+      "Biscuits",
+      "Vegetarian Treats",
+      "Natural Treats",
+      "Puppy Treats",
+      "Dental Treats",
+      "Soft & Hard Chews",
+    ],
   },
 ];
 
@@ -49,33 +100,34 @@ export default function Component() {
     <>
       <Header />
       <LandingPrimaryImageCtaSection
-        title="Welcome to Kinee – Where Pet Adventures Begin!"
+        title="Kinee: For the hearts that lead and the paws that follow"
         description="Elevate your pet’s walk with the best accessories designed for comfort, style, and safety."
-        imageSrc="/kinee/dog_cat.png"
+        imageSrc="/kinee/LUXURY_DESIGNER_DOG_COLLAR.png"
         imageAlt="Sample image"
         withBackground
-        withBackgroundGlow
         imageShadow="none"
         variant="secondary"
-      ></LandingPrimaryImageCtaSection>
+      />
+      <LandingFaqCollapsibleSection
+        title="Our Products"
+        withBackground
+        variant="secondary"
+        faqItems={faqItems}
+      />
       <LandingFeatureList
         title={"Why Choose Us?"}
         description={""}
         featureItems={featureItems}
-      />
-      <LandingSaleCtaSection
-        title="Ready to get started?"
-        description="Pre-order today and get a 50% discount on the final price for the first 3 months. No credit card required."
-        ctaHref="https://gum.co/product"
-        ctaLabel="Pre-order for $49"
-      />
-      <LandingFaqCollapsibleSection
-        title="FAQ"
         withBackground
         variant="secondary"
-        description="Looking to learn more about our product? Here are some of the most common
-          questions."
-        faqItems={faqItems}
+      />
+      <LandingSaleCtaSection
+        title="We Value Your Feedback!"
+        description="Help us shape the future of Kinee. Take a quick survey and let us know what you think"
+        ctaHref="https://docs.google.com/forms/d/1LNVSrLDZxgZVwMcoEmRzmkQIcWrGQxfBL4oX7_WK9Kk/edit"
+        ctaLabel="Share feedback"
+        withBackground
+        variant="secondary"
       />
       <Footer />
     </>
