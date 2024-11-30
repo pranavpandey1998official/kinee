@@ -126,6 +126,7 @@ export default function Component() {
         description="Help us shape the future of Kinee. Take a quick survey and let us know what you think"
         ctaHref="https://docs.google.com/forms/d/1LNVSrLDZxgZVwMcoEmRzmkQIcWrGQxfBL4oX7_WK9Kk/edit"
         ctaLabel="Share feedback"
+        imageSrc="/kinee/Leather_Dog_Collar.png"
         withBackground
         variant="secondary"
       />
