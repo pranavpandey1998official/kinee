@@ -99,8 +99,8 @@ export const LandingFaqCollapsibleSection = ({
                 {faqItem.question}
               </AccordionTrigger>
               <AccordionContent>
-                {faqItem.answers.map((answer) => (
-                  <li>{answer}</li>
+                {faqItem.answers.map((answer, index) => (
+                  <li key={index}>{answer}</li>
                 ))}
               </AccordionContent>
             </AccordionItem>
