@@ -37,7 +37,7 @@ const LandingPrimaryCtaContent = ({
       {leadingComponent}
 
       {title ? (
-        <h1 className="text-2xl lg:text-4xl leading-tight font-semibold">
+        <h1 className="text-2xl lg:text-4xl leading-tight font-semibold font-mono">
           {title}
         </h1>
       ) : (
