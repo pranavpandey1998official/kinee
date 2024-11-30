@@ -4,7 +4,7 @@ import { Twitter, Facebook, LinkedinIcon } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="py-8 mt-12 bg-secondary-900 text-white">
+    <footer className="py-8 bg-secondary-900 text-white">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center space-x-3">
