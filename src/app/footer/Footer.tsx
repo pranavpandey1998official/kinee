@@ -7,7 +7,6 @@ export function Footer() {
     <footer className="py-8 mt-12 bg-secondary-900 text-white">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          {/* Company Logo */}
           <div className="flex items-center space-x-3">
             <Image
               src="/kinee/logo_hor.png"
@@ -29,6 +28,17 @@ export function Footer() {
 
             <Link href="https://www.linkedin.com">
               <LinkedinIcon />
+            </Link>
+          </div>
+          <div className="flex flex-col space-y-4">
+            <Link href="/">
+            <p className="hover:text-gray-400">Home</p>
+            </Link>
+            <Link href="/about">
+              <p className="hover:text-gray-400">About</p>
+            </Link>
+            <Link href="/contact">
+              <p className="hover:text-gray-400">Contact</p>
             </Link>
           </div>
         </div>
